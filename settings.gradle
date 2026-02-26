@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "occultus"
+
+include 'bramble-android'
+include 'bramble-api'
+include 'bramble-core'
+include 'bramble-java'
+include 'occultus-android'
+include 'occultus-api'
+include 'occultus-core'
+include 'occultus-headless'
+include 'occultus-mailbox'
+// add any other folders you see in ls -la, like 'mailbox-integration-tests' if present
